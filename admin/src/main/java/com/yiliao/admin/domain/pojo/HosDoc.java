@@ -1,4 +1,5 @@
-package com.yiliao.admin.pojo;
+package com.yiliao.admin.domain.pojo;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,20 +11,26 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class HosOrder {
+public class HosDoc {
 
   private long id;
-  private long sickId;
-  private long docId;
-  private long seeId;
-  private String medType;
-  @DateTimeFormat(pattern = "yyyy-MM-dd")
-  private Date orderTime;
-  private String seeStatus;
+  private String docName;
+  private String docCode;
+  private String docPos;
+  private String docNick;
+  private String docPwd;
+  private long docDeptId;
+  private String docSex;
+  private String docPhone;
+  private String docIntro;
+  private String docSkill;
+  private long powId;
+  private long picId;
   @DateTimeFormat(pattern = "yyyy-MM-dd")
   private Date createTime;
   @DateTimeFormat(pattern = "yyyy-MM-dd")
   private Date updateTime;
   private long isDel;
+  private long roleId;
 
 }

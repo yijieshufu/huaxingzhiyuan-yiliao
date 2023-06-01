@@ -1,4 +1,4 @@
-package com.yiliao.admin.pojo;
+package com.yiliao.admin.domain.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
